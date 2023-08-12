@@ -16,7 +16,7 @@ Nasarawa Geography Information Service
               <div class="col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-5 text-center text-lg-start justify-content-center align-self-center align-items-start">
                 <h2 class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">Land Certificate Made Easy  </h2>
                 <p class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">Receive your land certicate in a few steps.</p>
-                <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="how-to-register-land.php" class="btn btn-lg btn-outline-white rounded-pill">Read More</a></div>
+                <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="how-to-register-land" class="btn btn-lg btn-outline-white rounded-pill">Read More</a></div>
               </div>
               <!--/column -->
             </div>
@@ -200,7 +200,7 @@ Nasarawa Geography Information Service
       <!-- /column -->
       <div class="col-lg-6">
         <p class="lead fs-25 my-3">A streamlined and reformed land certification procedures to ease doing of business in Nasarawa State</p>
-        <a href="how-to-register-land.php" class="more hover">Learn More</a>
+        <a href="how-to-register-land " class="more hover">Learn More</a>
       </div>
       <!-- /column -->
     </div>
@@ -230,7 +230,7 @@ Nasarawa Geography Information Service
     <h1 class="display-1 mb-5">Securely Pay for your Property</h1>
     <p class="lead fs-25 lh-sm mb-7 px-md-10 px-lg-0">Pay for for your application processing fee using your debit card online.</p>
     <div class="d-flex justify-content-center justify-content-lg-start" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
-      <span><a href="e-payment.php" class="btn btn-lg btn-primary rounded-pill me-2">Visit E-Payment</a></span>
+      <span><a href="e-payment " class="btn btn-lg btn-primary rounded-pill me-2">Visit E-Payment</a></span>
 
     </div>
   </div>

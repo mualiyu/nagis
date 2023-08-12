@@ -245,7 +245,7 @@ How to Register your Property
           <div class="card image-wrapper bg-full bg-image bg-overlay bg-overlay-400" data-image-src="./assets/img/photos/bg3.jpg">
             <div class="card-body p-6 p-md-11 d-lg-flex flex-row align-items-lg-center justify-content-md-between text-center text-lg-start">
               <h3 class="display-6 mb-6 mb-lg-0 pe-lg-10 pe-xl-5 pe-xxl-18 text-white">Register your property online today !!!</h3>
-              <a href="SRO-application.php" class="btn btn-white rounded-pill mb-0 text-nowrap">Register Now</a>
+              <a href="SRO-application " class="btn btn-white rounded-pill mb-0 text-nowrap">Register Now</a>
             </div>
             <!--/.card-body -->
           </div>
