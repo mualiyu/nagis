@@ -14,6 +14,6 @@ At [https://nagis.na.gov.ng/](https://nagis.na.gov.ng/).
 
 If you discover a security vulnerability within nagis, please send an e-mail to Usman muktar via [mualiyuoox@gmail.com](mailto:mualiyuoox@gmail.com). All security vulnerabilities will be promptly addressed.
 
-## License
+<!-- ## License
 
-The NAGIS software is licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The NAGIS software is licensed under the [MIT license](https://opensource.org/licenses/MIT). -->
