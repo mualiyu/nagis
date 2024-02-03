@@ -46,7 +46,7 @@ $submit = function () {
 
     sleep(3);
 
-    header('location: /admin/management');
+    header('location: /admin/managements');
 
 };
 

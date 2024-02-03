@@ -47,15 +47,13 @@ $submit = function () {
     $this->description = '';
     $this->image = null;
 
-    $this->success = "You have adde new Staff to the team";
+    $this->success = "You have added new staff member to the team";
 
     sleep(3);
 
     header('location: /admin/management');
 
 };
-
-
 ?>
 
 <div>
