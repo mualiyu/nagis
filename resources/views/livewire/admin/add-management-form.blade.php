@@ -144,10 +144,11 @@ $submit = function () {
                                 name="company-column" placeholder="Company"> -->
               <textarea
                 name="description"
-                id="default"
+                {{-- id="default" --}}
                 cols="30"
-                rows="3"
+                rows="10"
                 wire:model='description'
+                style="width: 100%;"
               ></textarea>
             </div>
             @error('description')
@@ -181,7 +182,7 @@ $submit = function () {
       </form>
 </div>
 
-<script src="{{asset('/admin/assets/extensions/tinymce/tinymce.min.js')}}"></script>
+{{-- <script src="{{asset('/admin/assets/extensions/tinymce/tinymce.min.js')}}"></script>
 <script src="{{asset('/admin/assets/static/js/pages/tinymce.js')}}"></script>
 
-<script src="{{asset('/admin/assets/compiled/js/app.js')}}"></script>
+<script src="{{asset('/admin/assets/compiled/js/app.js')}}"></script> --}}

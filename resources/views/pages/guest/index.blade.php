@@ -67,10 +67,6 @@ Nasarawa Geography Information Service
 </section>
 <!-- /section -->
 <section class="wrapper bg-light">
-
-
-
-
 <div class="container py- py-md-">
 
 <div class="row gx-lg-8 gx-xl-12 gy-10 gy-lg-0 mb-11">

@@ -13,6 +13,8 @@
   <link rel="shortcut icon" href="{{asset('/assets/img/favicon.png')}}">
   <link rel="stylesheet" href="{{asset('/assets/css/plugins.css')}}">
   <link rel="stylesheet" href="{{asset('/assets/css/style.css')}}">
+  @yield('style')
+  @livewireStyles
 </head>
 
 <body>
@@ -33,8 +35,12 @@
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
     </svg>
   </div>
+  @livewireScripts
   <script src="{{asset('/assets/js/plugins.js')}}"></script>
   <script src="{{asset('/assets/js/theme.js')}}"></script>
+  @yield('script')
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
 </body>
 
 </html>

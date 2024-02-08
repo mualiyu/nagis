@@ -45,7 +45,7 @@
       <!--/.row -->
       <hr class="mt-13 mt-md-14 mb-7" />
       <div class="d-md-flex align-items-center justify-content-between">
-        <p class="mb-2 mb-lg-0">© 2022 NAGIS. All rights reserved.</p>
+        <p class="mb-2 mb-lg-0">© {{date('Y')}} NAGIS. All rights reserved.</p>
         <nav class="nav social social-muted mb-0 text-md-end">
           <a href="#"><i class="uil uil-twitter"></i></a>
           <a href="#"><i class="uil uil-facebook-f"></i></a>

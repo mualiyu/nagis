@@ -1,24 +1,32 @@
 <?php
 use App\Models\Management;
-use function Livewire\Volt\{state, rules, usesFileUploads, mount};
+use function Livewire\Volt\{state, rules, usesFileUploads, mount, computed};
 
 usesFileUploads();
 
-state(['management' => fn () => $management]);
-
-
-// mount(fn()=> $this->management = $management);
+state('management');
+// dd($this->management);
 
 state([
-    'name'=> $this->management->name,
-    'gender'=> $this->management->gender,
-    'position'=> $this->management->position,
-    'rank'=> $this->management->rank,
-    'description'=> $this->management->description,
+    'name'=> '',
+    'gender'=> '',
+    'position'=> '',
+    'rank'=> '',
+    'description'=> '',
     'image'=> null,
 
     "success"=>'',
 ]);
+
+mount(function ($management) {
+    // $this->count = count($users);
+    $this->name = $this->management->name;
+    $this->gender = $this->management->gender;
+    $this->position = $this->management->position;
+    $this->rank = $this->management->rank;
+    $this->description = $this->management->description;
+    $this->image = null;
+});
 
 rules([
     'name'=> 'required|min:6',
@@ -26,41 +34,43 @@ rules([
     'position'=> 'required',
     'rank'=> 'required',
     'description'=> 'nullable',
-    'image'=> 'required|image|max:2024',
+    'image'=> 'nullable|max:2024',
 ]);
 
 $submit = function () {
     $this->validate();
-    Management::create([
-      "name"=>$this->name,
-      "gender"=>$this->gender,
-      "position"=>$this->position,
-      "rank"=>$this->rank,
-      "description"=>$this->description,
-      "image"=>$this->image->store('managements'),
+
+    if ($this->image) {
+        Storage::delete($this->management->image);
+    }
+
+    Management::where("id", '=', $this->management->id)->update([
+            "name"=>$this->name,
+            "gender"=>$this->gender,
+            "position"=>$this->position,
+            "rank"=>$this->rank,
+            "description"=>$this->description,
+            "image"=>$this->image ? $this->image->store('managements') : $this->management->image,
     ]);
 
-    $this->name = '';
-    $this->gender = '';
-    $this->position = '';
-    $this->rank = '';
-    $this->description = '';
-    $this->image = null;
+    $this->management->image = Management::where("id", '=', $this->management->id)->get()[0]->image;
 
-    $this->success = "You have added new staff member to the team";
+    // $this->success = "You have added new staff member to the team";
+
+    session()->flash('message', 'Successfully updated.');
 
     sleep(3);
 
-    header('location: /admin/management');
+    // header('location: /admin/management');
 
 };
 ?>
 
 <div>
-    @if ($this->success !== '')
-    <div class="alert alert-success" role="alert">
-        {{ $this->success }}
-    </div>
+    @if (session()->has('message'))
+            <div  class="alert alert-success" role="alert">
+                {{ session('message') }}
+            </div>
     @endif
     <form class="form" wire:submit.prevent="submit">
         <div class="row">
@@ -147,10 +157,11 @@ $submit = function () {
                                 name="company-column" placeholder="Company"> -->
               <textarea
                 name="description"
-                id="default"
+                {{-- id="default" --}}
                 cols="30"
-                rows="3"
+                rows="10"
                 wire:model='description'
+                style="width: 100%;"
               ></textarea>
             </div>
             @error('description')
@@ -160,7 +171,10 @@ $submit = function () {
 
           <div class="col-md-12 col-12">
             <div class="form-group">
-              <label for="email-id-column">Upload Image</label>
+                <img src="{{url('/storage/'.$this->management->image)}}" alt="" style="height:300px; width:auto;">
+            </div>
+            <div class="form-group">
+              <label for="email-id-column">Upload New Image</label>
               <input
                 type="file"
                 name="image"
@@ -178,12 +192,15 @@ $submit = function () {
               class="btn btn-primary me-1 mb-1"
             >
               Submit
-            </button>
+            </button><br>
+            <div wire:loading>
+                Processing...
+            </div>
           </div>
         </div>
       </form>
 </div>
 
-<script src="{{asset('/admin/assets/extensions/tinymce/tinymce.min.js')}}"></script>
+{{-- <script src="{{asset('/admin/assets/extensions/tinymce/tinymce.min.js')}}"></script>
 <script src="{{asset('/admin/assets/static/js/pages/tinymce.js')}}"></script>
-
+ --}}

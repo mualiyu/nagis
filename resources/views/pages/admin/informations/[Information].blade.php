@@ -32,29 +32,17 @@ Downloadables - Admin
       <div class="card">
         <div class="card-header">
           <h5 class="card-title" align="center">
-            Procedure and Cost for Obtaining CofO
+            {{$information->name}}
           </h5>
+          <a href="{{url('/admin/informations/'.$information->id.'/download/upload')}}" style="float: right" class="btn btn-secondary"
+            >Add new document</a
+          >
+          <a href="/admin/informations/" style="float: " class="btn btn-secondary"
+            >Back</a
+          >
         </div>
         <div class="card-body">
-          <table class="table table-striped" id="table1">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Procedure and Cost for Obtaining CofO</td>
-                <td>
-                  <a href="#" class="btn btn-success">Download</a>
-                  <a href="#" class="btn btn-warning"
-                    ><i class="bi bi-trash-fill"></i
-                  ></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          @livewire('admin.doc.downs.list', ['information' => $information], key($information->id))
         </div>
       </div>
     </section>

@@ -33,31 +33,13 @@ Information - Admin
       <div class="card">
         <div class="card-header">
           <h5 class="card-title">Doc's Info</h5>
+          <a href="/admin/informations/add" style="float: right" class="btn btn-secondary"
+            >Add info document</a
+          >
+
         </div>
         <div class="card-body">
-          <table class="table table-striped" id="table1">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Procedure and Cost for Obtaining CofO</td>
-                <td>Offenburg</td>
-                <td>
-                  <a href="single-info.html" class="btn btn-success"
-                    >View</a
-                  >
-                  <a href="#" class="btn btn-warning"
-                    ><i class="bi bi-trash-fill"></i
-                  ></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          @livewire('admin.doc.list')
         </div>
       </div>
     </section>

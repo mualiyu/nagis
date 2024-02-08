@@ -39,7 +39,7 @@
             </div>
             <div class="card-content">
               <div class="card-body">
-                <form class="form">
+                {{-- <form class="form">
                   <div class="row">
                     <div class="col-md-12 col-12 mb-2">
                       <div class="form-group">
@@ -85,7 +85,8 @@
                       </button>
                     </div>
                   </div>
-                </form>
+                </form> --}}
+                @livewire('admin.post.add')
               </div>
             </div>
           </div>

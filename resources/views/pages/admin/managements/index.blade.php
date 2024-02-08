@@ -34,7 +34,7 @@
         <div class="flex-d card-header">
           <h5 class="card-title">List By Rank</h5>
           <a href="/admin/managements/add" style="float: right" class="btn btn-secondary"
-            >Add</a
+            >Add new member</a
           >
         </div>
         <div class="card-body">

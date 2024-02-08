@@ -24,8 +24,8 @@
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About</a>
                 <ul class="dropdown-menu">
 
-                  <li class="nav-item"><a class="dropdown-item" href="about-us">About Us</a></li>
-                  <li class="nav-item"><a class="dropdown-item" href="management-team">Management Team</a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="/about-us">About Us</a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="/management-team">Management Team</a></li>
 
                 </ul>
               </li>
@@ -33,34 +33,35 @@
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Information</a>
                 <ul class="dropdown-menu">
 
-                  <li class="nav-item"><a class="dropdown-item" href="how-to-register-land">How to Register your Property</a></li>
-                    <li class="nav-item"><a class="dropdown-item" href="procedure-for-obtaining-CofO">Procedure and Cost for Obtaining CofO</a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="/how-to-register-land">How to Register your Property</a></li>
+                  @livewire('guest.nav-info-list')
+                    {{-- <li class="nav-item"><a class="dropdown-item" href="procedure-for-obtaining-CofO">Procedure and Cost for Obtaining CofO</a></li>
                     <li class="nav-item"><a class="dropdown-item" href="procedure-for-obtaining-RofO">Procedure and Cost for Obtaining RofO</a></li>
                     <li class="nav-item"><a class="dropdown-item" href="procedure-for-obtaining-RofO">Data for CofO</a></li>
                   <li class="nav-item"><a class="dropdown-item" href="downloable-documents">Downloadable Documents</a></li>
-                  <li class="nav-item"><a class="dropdown-item" href="laws">Laws</a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="laws">Laws</a></li> --}}
 
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">E-Services</a>
                 <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="dropdown-item" href="SRO-application">Register your Property </a></li>
-                  <li class="nav-item"><a class="dropdown-item" href="e-payment">E-Payment</a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="/SRO-application">Register your Property </a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="/e-payment">E-Payment</a></li>
 
                 </ul>
               </li>
               <li class="nav-item dropdown ">
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">News and Media</a>
                 <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="dropdown-item" href="#">News </a></li>
-                  <li class="nav-item"><a class="dropdown-item" href="#">Gallery</a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="/news">News </a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="/gallery">Gallery</a></li>
 
                 </ul>
                 <!--/.dropdown-menu -->
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact" >Contact Us</a>
+                <a class="nav-link" href="/contact" >Contact Us</a>
 
                 <!--/.dropdown-menu -->
               </li>
@@ -68,7 +69,7 @@
             <!-- /.navbar-nav -->
             <div class="offcanvas-footer d-lg-none">
               <div>
-                <a href="mailto: info@nagis.org" class="link-inverse">  info@nagis.org</a>
+                <a href="mailto: info@nagis.org" class="link-inverse">  info@nagis.na.gov.ng</a>
                 <br /> +234 805 4822 552 <br />
 <!--                   <nav class="nav social social-white mt-4">
                   <a href="#"><i class="uil uil-twitter"></i></a>

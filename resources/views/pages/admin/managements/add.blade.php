@@ -36,6 +36,7 @@ Add Manager - Admin
           <div class="card">
             <div class="card-header">
               <h4 class="card-title">Enter details below</h4>
+              <a href="{{url('/admin/managements')}}" class="btn btn-secondary">Back</a>
             </div>
             <div class="card-content">
               <div class="card-body">

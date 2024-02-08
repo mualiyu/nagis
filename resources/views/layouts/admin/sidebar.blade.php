@@ -3,7 +3,7 @@
       <div class="sidebar-header position-relative">
         <div class="d-flex justify-content-between align-items-center">
           <div class="logo">
-            <a href="index.html"
+            <a href="/admin"
               ><img
                 src="{{asset('/admin/assets/compiled/svg/logo.svg')}}"
                 alt="Logo"
@@ -122,12 +122,12 @@
 
             <ul class="submenu">
               <li class="submenu-item">
-                <a href="/admin/informations" class="submenu-link">List</a>
+                <a href="/admin/informations" class="submenu-link">Informations list</a>
               </li>
 
-              <li class="submenu-item">
+              {{-- <li class="submenu-item">
                 <a href="/admin/informations/add" class="submenu-link">Add</a>
-              </li>
+              </li> --}}
             </ul>
           </li>
 
@@ -148,6 +148,13 @@
             </ul>
           </li>
 
+          <li class="sidebar-item">
+            <a href="/admin/galleries" class="sidebar-link">
+              <i class="bi bi-grid-fill"></i>
+              <span>Gallery</span>
+            </a>
+          </li>
+
         </ul>
         <ul class="menu" style="bottom: 0px; position:absolute;">
             <li class="sidebar-item has-sub">
@@ -155,7 +162,8 @@
                  onclick="event.preventDefault();
                                document.getElementById('logout-form').submit();">
                  {{ __('Logout') }}
-              </a> <a class="btn btn-secondary ml-3" href="">Settings</a>
+              </a>
+              {{-- <a class="btn btn-secondary ml-3" href="">Settings</a> --}}
               <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                   @csrf
               </form>

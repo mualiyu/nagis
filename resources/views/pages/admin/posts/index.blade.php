@@ -41,7 +41,7 @@
           </div>
           <div class="card-body">
             <div class="table-responsive">
-              <table class="table table-hover table-lg">
+              {{-- <table class="table table-hover table-lg">
                 <thead>
                   <tr>
                     <th>S/N</th>
@@ -98,7 +98,9 @@
                     </td>
                   </tr>
                 </tbody>
-              </table>
+              </table> --}}
+
+              @livewire('admin.post.list')
             </div>
           </div>
         </div>

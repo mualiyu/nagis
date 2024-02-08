@@ -9,7 +9,7 @@
     <div class="page-title">
       <div class="row">
         <div class="col-12 col-md-6 order-md-1 order-last">
-          <h3>Update Manager</h3>
+          {{-- <h3>Update Manager</h3> --}}
         </div>
         <div class="col-12 col-md-6 order-md-2 order-first">
           <nav
@@ -35,7 +35,8 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h4 class="card-title">Enter details below</h4>
+              <h4 class="card-title">Update Manager</h4>
+              <a href="{{url('/admin/managements')}}" class="btn btn-secondary">Back</a>
             </div>
             <div class="card-content">
               <div class="card-body">
