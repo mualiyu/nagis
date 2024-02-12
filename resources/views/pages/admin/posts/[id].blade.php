@@ -98,9 +98,12 @@
                     </div>
                   </div>
                 </form> --}}
-                {{$id}}
+                {{-- {{$id}} --}}
+                {{-- <?php $post = App\Models\Post::find($id); ?> --}}
+
                 {{-- <livewire:admin.post.update :post="$post" /> --}}
-                {{-- @livewire('admin.post.update', ['post' => $post]) --}}
+
+                @livewire('admin.post.update', ['post' => App\Models\Post::find($id)])
               </div>
             </div>
           </div>
