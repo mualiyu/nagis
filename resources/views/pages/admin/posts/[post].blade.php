@@ -98,9 +98,9 @@
                     </div>
                   </div>
                 </form> --}}
-                {{-- {{}} --}}
+                {{$post}}
                 {{-- <livewire:admin.post.update :post="$post" /> --}}
-                @livewire('admin.post.update', ['post' => $post])
+                {{-- @livewire('admin.post.update', ['post' => $post]) --}}
               </div>
             </div>
           </div>
