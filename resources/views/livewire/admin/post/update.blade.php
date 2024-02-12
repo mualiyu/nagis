@@ -20,7 +20,7 @@ mount(function ($post) {
 });
 
 rules([
-    'title'=> 'required|min:6',
+    'title'=> 'required',
     'content'=> 'required',
     'image'=> 'nullable|max:2024',
 ]);
