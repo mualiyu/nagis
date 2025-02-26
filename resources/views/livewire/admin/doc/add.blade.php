@@ -30,7 +30,7 @@ $submit = function () {
 
     sleep(5);
 
-    header('location: /admin/informations');
+    header('location: /ng-admin/informations');
 
 };
 

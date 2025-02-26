@@ -3,7 +3,7 @@
       <div class="sidebar-header position-relative">
         <div class="d-flex justify-content-between align-items-center">
           <div class="logo">
-            <a href="/admin"
+            <a href="/ng-admin"
               ><img
                 src="{{asset('/admin/assets/compiled/svg/logo.svg')}}"
                 alt="Logo"
@@ -82,14 +82,14 @@
           <li class="sidebar-title">Menu</li>
 
           <li class="sidebar-item active">
-            <a href="/admin" class="sidebar-link">
+            <a href="/ng-admin" class="sidebar-link">
               <i class="bi bi-grid-fill"></i>
               <span>Dashboard</span>
             </a>
           </li>
 
           {{-- <li class="sidebar-item">
-            <a href="/admin/about-us" class="sidebar-link">
+            <a href="/ng-admin/about-us" class="sidebar-link">
               <i class="bi bi-question"></i>
               <span>About Us</span>
             </a>
@@ -103,13 +103,13 @@
 
             <ul class="submenu">
               <li class="submenu-item">
-                <a href="/admin/managements" class="submenu-link"
+                <a href="/ng-admin/managements" class="submenu-link"
                   >Management Team</a
                 >
               </li>
 
               <li class="submenu-item">
-                <a href="/admin/managements/add" class="submenu-link">Add</a>
+                <a href="/ng-admin/managements/add" class="submenu-link">Add</a>
               </li>
             </ul>
           </li>
@@ -122,11 +122,11 @@
 
             <ul class="submenu">
               <li class="submenu-item">
-                <a href="/admin/informations" class="submenu-link">Informations list</a>
+                <a href="/ng-admin/informations" class="submenu-link">Informations list</a>
               </li>
 
               {{-- <li class="submenu-item">
-                <a href="/admin/informations/add" class="submenu-link">Add</a>
+                <a href="/ng-admin/informations/add" class="submenu-link">Add</a>
               </li> --}}
             </ul>
           </li>
@@ -139,17 +139,17 @@
 
             <ul class="submenu">
               <li class="submenu-item">
-                <a href="/admin/posts" class="submenu-link">Posts</a>
+                <a href="/ng-admin/posts" class="submenu-link">Posts</a>
               </li>
 
               <li class="submenu-item">
-                <a href="/admin/posts/add" class="submenu-link">New Post</a>
+                <a href="/ng-admin/posts/add" class="submenu-link">New Post</a>
               </li>
             </ul>
           </li>
 
           <li class="sidebar-item">
-            <a href="/admin/galleries" class="sidebar-link">
+            <a href="/ng-admin/galleries" class="sidebar-link">
               <i class="bi bi-grid-fill"></i>
               <span>Gallery</span>
             </a>

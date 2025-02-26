@@ -28,7 +28,7 @@ $submit = function () {
 
     sleep(5);
 
-    header('location: /admin/galleries');
+    header('location: /ng-admin/galleries');
 
 };
 

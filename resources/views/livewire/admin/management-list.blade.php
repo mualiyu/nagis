@@ -41,7 +41,7 @@ $deleteManager = function (Management $management){
               <td>{{$m->position}}</td>
               <td>{{$m->rank}}</td>
               <td>
-                <span class="badge bg-success"><a href="{{url('/admin/managements/'.$m->id)}}">View</a></span>
+                <span class="badge bg-success"><a href="{{url('/ng-admin/managements/'.$m->id)}}">View</a></span>
                 <button onclick="confirm('Are you sure you want to delete this👇🏽?') || event.stopImmediatePropagation()" wire:click='deleteManager({{$m->id}})' href="#" class="btn btn-warning"
                     ><i class="bi bi-trash-fill"></i
                   ></button>

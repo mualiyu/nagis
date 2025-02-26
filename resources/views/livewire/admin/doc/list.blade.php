@@ -40,10 +40,10 @@ $deleteIf = function (Information $information){
               <td>{{count($if->documents)}}</td>
               <td>{{$if->description}}</td>
               <td>
-                <a href="{{url('/admin/informations/'. $if->id)}}" class="btn btn-success"
+                <a href="{{url('/ng-admin/informations/'. $if->id)}}" class="btn btn-success"
                   >View</a
                 >
-                <a href="{{url('/admin/informations/'. $if->id. '/update')}}" class="btn btn-success"
+                <a href="{{url('/ng-admin/informations/'. $if->id. '/update')}}" class="btn btn-success"
                     >Edit</a
                   >
                 <button onclick="confirm('Are you sure you want to delete this👇🏽?') || event.stopImmediatePropagation()" wire:click='deleteIf({{$if->id}})' href="#" class="btn btn-warning"

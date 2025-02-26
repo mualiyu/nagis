@@ -33,7 +33,7 @@ $posts = computed(function () {
                         </div>
                       </td>
                       <td class="col-auto">
-                        <a href="{{url('/admin/posts/'. $p->id)}}"> <p class="font-bold mb-1">
+                        <a href="{{url('/ng-admin/posts/'. $p->id)}}"> <p class="font-bold mb-1">
                           {{$p->title}}:
                         </p></a>
                         <p class="mb-0">

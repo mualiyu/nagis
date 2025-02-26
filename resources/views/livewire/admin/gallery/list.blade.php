@@ -45,7 +45,7 @@ $deleteG = function (Gallery $gallery){
               </p>
             </td>
             <td>
-              <a href="{{url('/admin/galleries/'.$g->id)}}" class="btn btn-success"
+              <a href="{{url('/ng-admin/galleries/'.$g->id)}}" class="btn btn-success"
                 >View/Edit</a
               >
               <button onclick="confirm('Are you sure you want to delete this👇🏽?') || event.stopImmediatePropagation()" wire:click='deleteG({{$g->id}})' href="#" class="btn btn-warning"

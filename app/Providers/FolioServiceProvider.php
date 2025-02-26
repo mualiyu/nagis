@@ -23,7 +23,7 @@ class FolioServiceProvider extends ServiceProvider
         Folio::path(resource_path('views/pages/guest'))->uri('/');
 
         Folio::path(resource_path('views/pages/admin'))
-        ->uri('/admin')
+        ->uri('/ng-admin')
         ->middleware([
             '*' => [
                 'auth',

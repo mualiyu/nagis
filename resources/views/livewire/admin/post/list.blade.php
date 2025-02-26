@@ -45,7 +45,7 @@ $deletePost = function (Post $post){
               </p>
             </td>
             <td>
-              <a href="{{url('/admin/posts/'.$p->id)}}" class="btn btn-success"
+              <a href="{{url('/ng-admin/posts/'.$p->id)}}" class="btn btn-success"
                 >View/Edit</a
               >
               <button onclick="confirm('Are you sure you want to delete this👇🏽?') || event.stopImmediatePropagation()" wire:click='deletePost({{$p->id}})' href="#" class="btn btn-warning"

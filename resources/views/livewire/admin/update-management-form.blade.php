@@ -61,7 +61,7 @@ $submit = function () {
 
     sleep(3);
 
-    // header('location: /admin/management');
+    // header('location: /ng-admin/management');
 
 };
 ?>

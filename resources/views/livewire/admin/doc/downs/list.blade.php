@@ -34,7 +34,7 @@ $deleteD = function (InformationDocument $InformationDocument){
               <td>{{$d->name}}</td>
               <td>
                 <a target="_blank"  href="{{url('/download/'.$d->url)}}" class="btn btn-success">Download</a>
-                <a href="{{url('/admin/informations/'.$this->information->id.'/download/'.$d->id)}}" class="btn btn-info">edit</a>
+                <a href="{{url('/ng-admin/informations/'.$this->information->id.'/download/'.$d->id)}}" class="btn btn-info">edit</a>
                 <button onclick="confirm('Are you sure you want to delete this👇🏽?') || event.stopImmediatePropagation()" wire:click='deleteD({{$d->id}})' href="#" class="btn btn-warning"
                   ><i class="bi bi-trash-fill"></i
                 ></button>
@@ -43,7 +43,7 @@ $deleteD = function (InformationDocument $InformationDocument){
             @endforeach
             @else
             <tr>
-                <td colspan="2" align="center">No files found..... <a href="{{url('/admin/informations/'.$this->information->id.'/download/upload')}}">Create one</a></td>
+                <td colspan="2" align="center">No files found..... <a href="{{url('/ng-admin/informations/'.$this->information->id.'/download/upload')}}">Create one</a></td>
               </tr>
             @endif
         </tbody>

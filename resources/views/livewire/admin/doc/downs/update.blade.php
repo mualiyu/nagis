@@ -45,7 +45,7 @@ $submit = function () {
 
     sleep(5);
 
-    // header('location: /admin/informations/'. $this->information->id);
+    // header('location: /ng-admin/informations/'. $this->information->id);
 
 };
 ?>

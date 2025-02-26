@@ -40,7 +40,7 @@ $submit = function () {
 
     sleep(5);
 
-    // header('location: /admin/posts');
+    // header('location: /ng-admin/posts');
 
 };
 
