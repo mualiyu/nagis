@@ -18,7 +18,7 @@
           >
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="/admin">Dashboard</a>
+                <a href="/ng-admin">Dashboard</a>
               </li>
               <li class="breadcrumb-item active" aria-current="page">
                 {{$information->name}}
@@ -39,7 +39,7 @@
           <div class="card">
             <div class="card-header" align="center">
               <h4 class="card-title">Upload Document under {{$information->name}}</h4>
-              <a href="{{url('/admin/informations/'.$information->id)}}" style="float: right" class="btn btn-secondary"
+              <a href="{{url('/ng-admin/informations/'.$information->id)}}" style="float: right" class="btn btn-secondary"
                 >Back</a
               >
             </div>

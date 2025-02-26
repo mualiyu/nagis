@@ -19,7 +19,7 @@ Gallery - Admin
           >
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="/admin">Dashboard</a>
+                <a href="/ng-admin">Dashboard</a>
               </li>
               <li class="breadcrumb-item active" aria-current="page">
                 Gallery
@@ -35,7 +35,7 @@ Gallery - Admin
         <div class="card">
           <div class="card-header">
             <h4>Gallery</h4>
-            <a href="/admin/galleries/add" style="float: right" class="btn btn-secondary"
+            <a href="/ng-admin/galleries/add" style="float: right" class="btn btn-secondary"
               >Add</a
             >
           </div>

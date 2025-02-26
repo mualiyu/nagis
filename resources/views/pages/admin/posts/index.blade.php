@@ -19,7 +19,7 @@
           >
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="/admin">Dashboard</a>
+                <a href="/ng-admin">Dashboard</a>
               </li>
               <li class="breadcrumb-item active" aria-current="page">
                 posts
@@ -35,7 +35,7 @@
         <div class="card">
           <div class="card-header">
             <h4>Posts</h4>
-            <a href="/admin/posts/add" style="float: right" class="btn btn-secondary"
+            <a href="/ng-admin/posts/add" style="float: right" class="btn btn-secondary"
               >Add</a
             >
           </div>

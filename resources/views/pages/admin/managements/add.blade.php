@@ -18,7 +18,7 @@ Add Manager - Admin
           >
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="/admin">Dashboard</a>
+                <a href="/ng-admin">Dashboard</a>
               </li>
               <li class="breadcrumb-item active" aria-current="page">
                 Add Manager
@@ -36,7 +36,7 @@ Add Manager - Admin
           <div class="card">
             <div class="card-header">
               <h4 class="card-title">Enter details below</h4>
-              <a href="{{url('/admin/managements')}}" class="btn btn-secondary">Back</a>
+              <a href="{{url('/ng-admin/managements')}}" class="btn btn-secondary">Back</a>
             </div>
             <div class="card-content">
               <div class="card-body">

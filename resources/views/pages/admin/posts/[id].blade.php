@@ -18,7 +18,7 @@
           >
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="/admin">Dashboard</a>
+                <a href="/ng-admin">Dashboard</a>
               </li>
               <li class="breadcrumb-item active" aria-current="page">
                Update Post
@@ -36,7 +36,7 @@
           <div class="card">
             <div class="card-header">
               <h4 class="card-title">Update Post Contents</h4>
-              <a href="{{url('/admin/posts')}}" class="btn btn-secondary">Back</a>
+              <a href="{{url('/ng-admin/posts')}}" class="btn btn-secondary">Back</a>
             </div>
             <div class="card-content">
               <div class="card-body">

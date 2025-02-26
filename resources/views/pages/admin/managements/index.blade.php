@@ -19,7 +19,7 @@
           >
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="/admin">Dashboard</a>
+                <a href="/ng-admin">Dashboard</a>
               </li>
               <li class="breadcrumb-item active" aria-current="page">
                 Managements
@@ -33,7 +33,7 @@
       <div class="card">
         <div class="flex-d card-header">
           <h5 class="card-title">List By Rank</h5>
-          <a href="/admin/managements/add" style="float: right" class="btn btn-secondary"
+          <a href="/ng-admin/managements/add" style="float: right" class="btn btn-secondary"
             >Add new member</a
           >
         </div>

@@ -18,7 +18,7 @@ Downloadables - Admin
           >
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="/admin">Dashboard</a>
+                <a href="/ng-admin">Dashboard</a>
               </li>
               <li class="breadcrumb-item active" aria-current="page">
                 info
@@ -34,10 +34,10 @@ Downloadables - Admin
           <h5 class="card-title" align="center">
             {{$information->name}}
           </h5>
-          <a href="{{url('/admin/informations/'.$information->id.'/download/upload')}}" style="float: right" class="btn btn-secondary"
+          <a href="{{url('/ng-admin/informations/'.$information->id.'/download/upload')}}" style="float: right" class="btn btn-secondary"
             >Add new document</a
           >
-          <a href="/admin/informations/" style="float: " class="btn btn-secondary"
+          <a href="/ng-admin/informations/" style="float: " class="btn btn-secondary"
             >Back</a
           >
         </div>

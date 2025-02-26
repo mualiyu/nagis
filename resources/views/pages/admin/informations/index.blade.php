@@ -19,7 +19,7 @@ Information - Admin
           >
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="/admin">Dashboard</a>
+                <a href="/ng-admin">Dashboard</a>
               </li>
               <li class="breadcrumb-item active" aria-current="page">
                 Managements
@@ -33,7 +33,7 @@ Information - Admin
       <div class="card">
         <div class="card-header">
           <h5 class="card-title">Doc's Info</h5>
-          <a href="/admin/informations/add" style="float: right" class="btn btn-secondary"
+          <a href="/ng-admin/informations/add" style="float: right" class="btn btn-secondary"
             >Add info document</a
           >
 
